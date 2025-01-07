@@ -1,16 +1,20 @@
 {
-  "name": "my-app",
+  "name": "plc-app",
   "version": "0.1.0",
   "private": false,
+  "homepage": "https://mohamed-engineer.github.io/PLC/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d dist",
+    "predeploy":"npm run build"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
     "express": "^4.19.2",
+    "gh-pages": "^6.3.0",
     "next": "14.2.7",
     "nodemon": "^3.1.4",
     "react": "^18",
